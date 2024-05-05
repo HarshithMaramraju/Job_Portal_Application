@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <title>JobsHere</title>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav class="navbar">
+      <h2 class="navbar-logo"><a href="#">Jobs Here</a></h2>
+      <div class="navbar-menu">
+        <a href="#jobs">Jobs</a>
+        <a href="#companies">Companies</a>
+        <a href="#testimoni">Testimonial</a>
+        <a href="#blog">Blog</a>
+        <a href="#">SignIn</a>
+      </div>
+
+      <div class="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- hedder section -->
+    <header>
+      <h1 class="hedder-title">
+        Find your <br />
+        <span> dream job here!</span>
+      </h1>
+      <img
+        src="https://c1.wallpaperflare.com/preview/942/719/802/to-reach-looking-career-job.jpg"
+        alt=""
+      />
+    </header>
+
+    <!-- search -->
+    <div class="search-wrapper">
+      <div class="search-box">
+        <div class="search-card">
+          <input class="search-input" type="text" placeholder="job or skill" />
+          <button class="search-botton">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- filter box -->
+    <div class="filter-box">
+      <div class="filter-dropdown">
+        <select class="filter-select" name="job-level" id="job-level">
+          <option value="">Job Level</option>
+          <option value="">Entry Level</option>
+          <option value="">Mid-Level</option>
+          <option value="">Senior Level</option>
+        </select>
+
+        <select class="filter-select" name="job-function" id="job-function">
+          <option value="">Job Function</option>
+          <option value="">IT</option>
+          <option value="">Management</option>
+          <option value="">Education</option>
+        </select>
+
+        <select class="filter-select" name="employment" id="employemnt">
+          <option value="">Employment Type</option>
+          <option value="">Internship</option>
+          <option value="">Part Time</option>
+          <option value="">Full Time</option>
+        </select>
+
+        <select class="filter-section" name="education" id="education">
+          <option value="">Education</option>
+          <option value="">Under Graduate</option>
+          <option value="">Graduate</option>
+          <option value="">Masters/Phd</option>
+        </select>
+
+        <select class="filter-select" name="location" id="location">
+          <option value="">Location</option>
+          <option value="">Remote</option>
+          <option value="">USA</option>
+          <option value="">India</option>
+          <option value="">UK</option>
+        </select>
+      </div>
+
+      <div class="filter-chosen">
+        <div class="chosen-card">
+          Remote <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="chosen-card">
+          Full Time <i class="fas fa-times-circle"></i>
+        </div>
+        <div class="chosen-card">IT <i class="fas fa-times-circle"></i></div>
+        <div class="chosen-card">
+          Entry Level <i class="fas fa-times-circle"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- jod listing -->
+    <section class="job-list" id="jobs">
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/2048px-Google_%22G%22_logo.svg.png"
+            alt="Google"
+          />
+          <div class="job-detail">
+            <h4>Google</h4>
+            <h3>Software Engineer Internship</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">HTML</a>
+          <a class="lable-b" href="#">CSS</a>
+          <a class="lable-c" href="#">JS</a>
+        </div>
+        <div class="job-posted">posted 2 days ago</div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="https://pbs.twimg.com/profile_images/1268211892809371648/agF9_x-o_400x400.png"
+            alt="Microsoft"
+          />
+          <div class="job-detail">
+            <h4>Microsoft</h4>
+            <h3>Software Engineer I</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">Java</a>
+          <a class="lable-b" href="#">J2EE</a>
+          <a class="lable-c" href="#">SpringBoot</a>
+        </div>
+        <div class="job-posted">posted 2 days ago</div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAABJlBMVEX////u7u7t7e3z8/Px8fH4+Pj19fX6+vr8/Pz+/v7v7++aH+ycIe6KCORqBL9iA7WkDPeEB9ebCu2qDfx+B9KWCulbA69vBMR3BsqNCOCiDPKpAP9YAqtnA7tgA7R7Bs69Zvrl3ulPAaO4c/GVAO6ya+317vnx9e/2+fDw4/nz+e1JAJ6DANzfzu6uYOycLO3NoPXlzvimN+/Rqve7efKnSu7u6vHfzuvUr/P79/7DhfSqTuvVsuzJkvTt4/asWu7hxfnJmfanQ/HXrve6fe3dwPfTp/eqa+TEreF5NMSgc9S9oN7cy+WFPseqf9aXUda7kuXNtuSgWtqLHtVzUKzAtNKfg8R9ULra0+R0N7e7pteYcsd2HsOWYM24ldyZP9uzfd+3S/kP246pAAAN2UlEQVR4nO2daVvbuhKALTsxsbIALgECBErqIgMJlJ6ytZDSsnRvoT23t2e52///E1eSbSIndiLJdmIH6zkfPCc1I78ajWYkWVYUWnRACnQEjQoFRyhQQXMESK5V3RFUKhTpteEIM1QoOUKJCjP0ftWgQtERsqVTyVZ1c0Sp1JkjyhHFh0hlbyWC6t1KBe9WVby6Kltdla1uRnQqOi1Fp0gIurSQFZ0KSK5dANsuEt0lHTqBgwiwt4II1R3euwFb3azozBHliJJBFNUvyFQ3xTqBAmkpGrQAKszQ6xIVQIkKM45Ar3GkQQWFCjoVCq5A79ccQaOC7txTYAWQJZ1uS+B2IQV47ULKfbxAitsugApeu9BSZAWvXWgx3HahRXHbhRGyotNDBPh790ONrjNS3RxRKnXmiITSWJUjvVPZ6qpsdVW2uqpvGFXDh+4M6FQ0WooztAQIznVxQNBdQaeCzgjaSCFLOjUt5jQWsO0C2HaR6C7p0JknIONCBHNEI6oLO7i6OGKfZkQR/QLa23+2RavrSynVodWNdUotQZ1AKdBSLNHiCDP0eiZAcP5VkRV0fGU/NS3z6QGuO/1Boz8YGhX0ACEOnZ6aUuI6Fa9dIqWUT8xyuW49p6Zk5Gls0DBKEOFiWk+wKRlTGl3HgqhcMa3nv50qEOaIQhHhYlkvOgjBHFE4okoFe6WbIwSnDVF0d91DVCmXiSkl7a6NAHftDd2xuut4Bv26x+YeVN06/O1oR5uGQR/wmW54GIcv7xFV/P2t/uIYITLvHncaO7y7pDCNhcGIyiRWOjw57VU3ywlIUogqGFL55XaOKByRGysdnpTsggqhmmFEEVPK4YgqZdOsXB3bMMGdIcFpLBFi8EXyE5a92c8eIodNv1AmvvvVGbLD1Qjr5JiLjWti1msXrngB8sZFAULdMs+7CAnHKGE6k4yLfDo9RIC/d4+MroMR0dzk9RlEMKPR9VgQ0QHu/BfyNi/kiAKFOjalC/KA04woYKpTABG+rFv7b7qRdSaOCMSbxtYFEBHBsvYuimTGJAtpLN1lBNitSYBzO5Rxvx2KDvplNhRicZSDBGJKz7rkQSV1Qlgw2C1YBrMFS2O2YAF2C5bMc0Kp0LHPdEOi64A40v+DaZElAXy/hM6h3UVnukuU0JH+sXEkIGECCbuxKW3uIACjLlhnPEcLR1ShXunpAdLglCMCSBYRFcjq0pFNwoCUImLHiKCVKWaM6N1KBa+6qopO9i2Th0qYYyLzuPc6AZdOtZfGEiHyClyYTjwWxvLKil282DPNSl8GK1CwV3r725Y9k8rXZJh2EU0pAdMuyO6e71uDU9gjB7meYJlkoZL0Nz6d2UpjSe/G+en1HtvfRBGR5OTt5amITpDSBCS0upCYUsUyy7KIsGDVsVdCaFoR0eoa16+tujwi6pUujwikNCPSh986ZBgt0o1Y2y/L2CuVXd8tYlLuD1b9qrODNMXg0BkBEedzeogk0jt2GPW5TgOpZ28dr8SNqI8X9konuojOJDfPhMYLRsAY4Y8XhirdfmnSDicFinQ4y7o6JvO4MT1ohOcEg90lakqp0ZFbKZwcEtctbUt0SeAIObsopdPYKNG1wybJTcUIHV/VrVDfzMPLWag0sp+jhVQXpwX20eUh9UoyiKhUt15fTy8iKthK58q0yPgmY0VlOvlWOd+2EZ1WmgiiUDcWFNJzpZSDrvP08q0vVhJ2TNiUzlQyj8uvU5FPY/vd9VgSQ7t48MKyJJNc15T2z7u2HUvSLSgoTLtwpHeAbRdfSglGtcvWzXPLtwoQ4J6GWplp7V0gBPl1Kj5bkH5ODxHg791SyUCJ2O7BUyeBk0NEIFXOyTzu5BOQ5Jb97O7t/YyJBCKawe3dIRuHAYYxnYiKSEMX7oyJHCISBZTfbInojAsRO4xKp7E86xhkxuTZPhMrjaRS8f1C/odFV5cUbp0MIonnVJy1N/b8BENjzk9wBd0R3MU7hVmvKyr8i3fG/fkJxJSYUKkcNk3i+6Hc+8W0nt9sQQGdzjkRUs8ZJV5w24VrjPDHKAChbW8elycuGhRwFFDdEtIp/5xgoLsIRtcCvZvtogWkX7++NyVBRFhqVD1Esm4hNQnIkP0dhrJ9XiGTb0OpBDircpWWB4CIzHKUrl+Z9bI3Q8llRS6gB4AIeMtLx2TyjbujVXtlXIjicddRUkqI1JNDX6wUgogxIBZR4u56Ett02T9GBcM+vjItb5gf3JXslHrVXzb1sWxHVpjuorLdZUxnNng6EVIvD4es5pbL1YGyCaPp5HxODxHg9yhJrGkZGg67UeeFGbiaWyn3G9AIRFw6U5qjDa9uwSaTb2al4kNUCTCgB4uI6uw8qTvzSi6hQAOaBCLf0K0OvTXRMxvIvzt9RudxfTGQGCIxnSOeU/G9PWkMCuzbk35B/lXKADU+wdYOnhDXHW5ADiItRp3hzzmZNHaUTqzn9N1wPtXxxUXUpNL0+hwkNTx9/2F2dmmeC1EMOtOdgPTrhHjwP/7YJGV2vbncyBH5dBolUNDVTx+aNQfR7Oz6ei3clB4gIvzX0eePzRopLiIMaW02zJQmnsYGbSpR3FsTctczZ19qtSUfonVc1haDTSkedz36OdMy6Ovo89fl2tKSQ4ixIlwW1wJNaVyDflh3GfPRg/D9lyVaakGIcGmtDZhS5NCR7zk9RIDfo8SagDhddPvr8tLyUERr2JJai35TeiA5Giwopbtvy7gsLTGMmgNWtEZKa605/8AQwYL96/bH8gYnohb+b7dnSqlJY9WIiML8gqHjIPHu28bGwgZFtMxhRRhSq7Xbck0p3jQ29DkFJ2Z1dmJ2cF5UZJK0ZHdv5xcWCCEWUW04Ilp2d9eWq4lOzLLPOfzFT5VtF9/xyCrbLirP8cg++4OocPd9wSniiAik3WZ7S0yn1HOCSUTXhqFAtHn7Y2FBHhEmtPv7P/h1KplLQO6+z+Mij2h3t/Vz03sBYgoRbd38aPcREnDXFNDvdyqC4zodecyIbKXzrk0B9Rh5iHyDvi9HYxDhQb/1s1tCUNhyM5HGInR087bdbsy3pRG1Wv+8K43hHRD/c7pbsCCzNSnoEzYKe36Cwp6fMGoLlrNRCteg865RbeAy77eiBe6O1lr7+QtpPGc2QHYLFmS3YIk/p2NRSR8DiA3o9OR5lQKSRkQNCHLrDHELEs/JhyhaAoJ2Ok+qHiAJRNSGfnaFdDKIAD+iSeRohjKD4CU2oHqjwYdoYNBfXF9f++NPTbBZsoNIUY6vqvU6A0gU0eL64l+fdaQ7PmGSiIand+K+yBkwSmeHBFDdB8mPaGNjGKL1xT/+PEKFcR13GOyLEntNBtnbL826WZdGNNtcXP/rc8kW0JnMazIgjnYJSGNL168s6x6QBKLZ9S/EgER0Stv8uKNrHHYo3ZcVDAiXkYiCfFGzWZttfjxGBRhfXpimBASiAjEgCkgOUbPW/PDpND2H88SKCOEY6Ne5ObeysmLyIupPY5dqzY/0pB7/uDQdiAwF7Zy9mpsjhEYjCs70a7W/P23aopY72TRW5PyErTdzcy6hfkSDcVEgotq/Okgb6wow73NGVWqUcBp28Wr1USii8BGN8UV//3sr4Qed4EdRle6bldVHDiEpRBvLS9/vyEH9/DqzlYAcPF7FgFxC4oiWN7ABbSJE9joaU4nIsB8TQH5EK/wj2vLG9wNEJxKn5RjeQURKJEQ/brveIJVqRAPpncDKVB+iFd6ORiF9uzBkdA5HJJDGjtYZy6GFQR2Nyxdt3HbdNDXxZFT+OeNIY1UkgwgbEDlSphSvLQDWFiS6aFLRtYdIaND/2o2kM2MJiCCidrv9n/dQS8UW1HEj4uto7cZ/f+1oMB27dOUQSXwUlR8RNqAzA8WgU+qlHhmdwDlYHrKLd5DzkHfvUxUQciNqN66OcQ3j0OktGCpBC4ZGb8EQsgfLy+h0WyJqGjs6dGxU64324ckRPX8oFp2BL7ukNY3liq6rjauOYgO2u0TRqUxdAlJ1PiUnfZTG9CN613FOw8z0Fz+TQ+R+IdXIPCIaxXOkdypbXdWrbkDoSBFZZv0pnee4d51sdaPppMfNsYhU39CthocLgjqlPyGns5+QC4yuV8hXPo7s0uCe3Th0avrYPiEH+ExXMAExVyzL2iMGpAeYbrxTGoC1BcDaQiw6k0pA5qz9m6OdAog5GUhLAhIZES6PD0jd1RxRCKKKc6hgAtWdIKK4ptQIpdfXoS+eJHpORFI6QTyf+b531yvnXRuPIeSHRD657XtNdVBI5jPfXrvEkMauvrqwnXZJLKXMchq7uvrovItsetpugpFuVhOQEkb0vzOEUPLVzSoiw7jc3iGrqTmicEQGeQtv2hFFdJ3j+kDpJHTGMuiPbwCeyKAP+Ew3PIwbbrrJnBMxTp2pOnkmnTpzRDmilKSxgCelJMKYXnaJVyeQnpiNcrBttnQqXrtwxQv+D5SOJ0aZuE4PEeDv3ZOMdLOagOSI0lTdjCASnOqMpbqT1OkhykhKOQmdzhas0ecnBGyHMtjtUAa7HcpgtkNpzHYowG6HyopOKBU6iphuXKuxE9OZJyB5jpYjGgsidowYcZp471Z12EdRgdC4lHadeCycxPkJ2dKpMO0imlL6PoqaWIwycZ0eIsDfu/MEJNXVnU5E0gFgWnQGIfJ9LFQbuPV+GKVS0DAKxFs0xTpDEansrY4bM1i6BtuifV8Clq1uGnUqyv8BySRfxZk5ZSIAAAAASUVORK5CYII="
+            alt="Accenture"
+          />
+          <div class="job-detail">
+            <h4>Accenture</h4>
+            <h3>Internship</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">Python</a>
+          <a class="lable-b" href="#">Django</a>
+          <a class="lable-c" href="#">HTML</a>
+        </div>
+        <div class="job-posted">posted 3 days ago</div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="https://i.pinimg.com/736x/89/0c/25/890c250fe129488a586b1a99e8b68107.jpg"
+            alt="infosys"
+          />
+          <div class="job-detail">
+            <h4>Infosys</h4>
+            <h3>Associate Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">HTML</a>
+          <a class="lable-b" href="#">CSS</a>
+          <a class="lable-c" href="#">JS</a>
+        </div>
+        <div class="job-posted">posted 1 days ago</div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAABDQ0O7u7v29vY6OjrAwMDe3t77+/t1dXWjo6OOjo5ycnLHx8fX19eHh4ednZ3t7e3Nzc3w8PBjY2OysrLi4uKsrKwmJiZqampOTk4dHR2WlpYWFhYrKyvZ2dl/f39QUFAzMzNaWlo2NjYZGRkQEBBGRkaCgoIuLi6Vie1wAAAIt0lEQVR4nO2ah3KjSBCGQWCiRBJBklGyHN//Ba/DDEEgtL5F9lVdf1W7IjP/TE+HwYYhCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIg/AFHK5r/oaXVUNiG4eJGBsfbw5ZrGHaBG/O/vU9umuZ59qdaZktqGB+0YRhe53BgGBVtPKCDuwT0knrux/YVlryxulb4RRvLuV/e50Iv+Zj7sX2FIW9sewoTw1Vbc7+8z4Le8TT7cz2P1OxgwzC0KBv3lqQaD5/U4WL2t3d5lEKDddEMX+HWC/yrcM/HvbW+4PURFtTjwQp3uIHOzE9QDu41CsmSj/hf+YjXa35AoU1ehrwNRIhW4ZmmJnqb8BGv1/yAwoC9yQH+PxmtwjX+Okb9aF/zAwq/OCJoKVqh2i9Z6OO4q7A8RlF0e6LA2WM6fkopjMhIlRSrVbhh4TS2+d+JmIQVms/M26IX+6N4oR393i/W1/eW4Ys6e6lGVOKJhcHRAfcPnf21kSnhRkLR40HyjEZhi9+cqg5Xp/Ksd+tn/6R9/egAKPiHcs8VbEAHOvCT2LSX4OE0gY3jDyo0PT7hDE70rcm+1r9/XCP/ioHCdz7ujwmkZJLxNoNzq9/SMM1AIadQ53GB7SDmw3PZzZf8KqxwEyRMwFN+1zT7nKyybBXoIdWOaKX2Y7zerZ9NciL/SUajhU6Jzbj1nxmO2pOapMZzd8CBY/XY9PkvGFOoncymHwbtqKlVC75g2rk4n5fcRy+6DvLziWw4imnQjTjErnJO/qnwDDcmy0jjGA7F2FNVyMQubnM3N7fG1MvHML8sEy+O6blBfLuDxxQqga+3G6/czGVCX/pKl+ya7rhwz+T8Blu/eg0WTz3lYtSMKVo1XsChxlBJYqnXcU675PNw/cGgZML9jsKE7373bt3TzMLn2wIh3X5xUjvKMLQnHtqFz2IzpTA2F6XtBvi0TaMwJIVudAzMDaRLKH/HBQpWIivdOdAFQWmXBZbUK3T8n7dbMqLw/a5rbBzp7SWWrfmitp7NGH8cLJIKM6dOx2YudDY6VAhkfBAan+laK6cexVuLtuAKoO1rUv3nCrO7FtiuRbzcumTd9FCkyl2w7ASaFuTwQ83MzSf7tkJ1EK6EzipIYb1EV86d09Zbe9MN2zD9RwpP94anuwizuNF5q6YiqrQtL6HxhVmX2ET8h5n4qbyjMIN5a1FvWxCZMH/l29vsAsb2eTMhcEQhe5Gpm5Zmh3FjdhqFgR7oEBpbQOdvQQSZVYkOJZxW+MnOxkYln2CyW6Wwk8c+3cmmBgpTbvjE1GVfu9cST2OXZE1+W+g8cAtXokJ4QbnniZP66C6zCYVQYJ3idzRTC2631a29gtKacnhjCiNu90QA5yvKJu/ZjBQG66YRpfYKe/D6qBBKX3+hXcMJRiXi8c4waFwpVI1BM0WFYBDLD7j1o1MBwZVf31No3Z2GobLiNrUbWVC+mO8qH/oCEQatZdisELzrRius8SQb3Sc2O0QdrUIWHOGtpBBqzANsV13DdMg7f0Ohis8Ty1+UsWEEaOuPxaA6RmOvV1GFRmjm0TGmuoQVYji1jVOdRYkKZ4fMDUhnaO4wRc6UwgNbAq4NsMLM1MnCyYms+l8prO4pLFsH06khBw4nfaLjuyb8VPRwio0XbOZbM/zerpkYMV8bgkKYvkc1m33zDJ1Dlrnt5zTUiOnk8dYY3s6CkubZkLlcGolDfxYlYeJgLuk5YViQWZYWzdm1A0PjZUlYqNWLLKl5keToEK6RWri0Y3HHpXB9yp/IbMch0WkV1gU1kq78jsK785Bq+2amV43E233yuwwUZnd8aXQ1YqmuoSfD7i/y7XiYd4yUqc12ov0HGeY00yNSKk/QRQ37RLX1mwwV5pMTkc9eLW+qUZxI8H+RxaD7OwXrEI4P119t1yOdEi33+w8IgcHSB7YuFOn+0q8hClnbE11hbUPjM6ebotOTebi4RswXY9J62rwvZvk0zaGoG1F0bTSWUtt8ahAs94OAUehuWupgoj4Ex5iAkg28QB31SiG9KWc4hsJpNvzpUP6HbPUzGzLt/keMjkf8NDjOCjvpsEcpTHlEhbVh2zamK6HBteuGnFKKsfsJbwKBAQS5CJ9veXTxBi9OZ/kbBtWznRKyWep9GUi83JCeDkY9bdztUmetIeUzXyAppClQ4bdfVFi2o6/rfnvGr6bO9YC1WUqvCsNWq+8wwz+AiQfKYQy3nlKYdBViZsDJ2A5HEhXGvBDDCpXWjXmey2+pmaVXDsv+Grjf9uRayeBKIYrr1oSUb+otCRf67qX59vV1OHhYJ5TZhW5/Bl1rSjBR4a4NPgtzAxd/8FTZzvS5ZqvVnOsgOJvXPMVFlmVF2JRKFFh4sc13SttbR3pdqj+2GT6raDyNp+YDZd4xLWigqaLCj7b64v7FRQEXn5rMorAciAKx9tvIUeLL63VLh8GqfprjMHWsdJvVbPkRFA459QgqzM1Tq7D1x2t/rlw3GbT1zTbsj3GBZ55cY1+mRj5ybkBF39PUHGffzZJdESoM2iRw0fve/TG5hvYNwqum8iJfMCZQm83IwF/5PuqJPQxJ39MoYZ/mkuczKrTbT1rNGHq8N9fHkP7HUJ1z2/W1CL8dpvTKTpdXns82/aBaYCaxNC9JXderxpeih0JH4miFWLBt6irYrkHTEq4Nj8b7Nqguc+aBlo4RX2HX2Bz/tbXPqv86u8rV4rj5/DkIXke2hrSZsjG4l5OBeS35GlNZ5oFmY8S5TGao78oFe/jnWb99e2m2Wh2HfWanmWM5WTn6EWNN5wZrNEREf0EKo+2WgJvCBnae7VJvlK6KTuqVpWOtUjqMF/NfpD74rzIFQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRD+h/wDu1lkufhlTRkAAAAASUVORK5CYII="
+            alt="TCS"
+          />
+          <div class="job-detail">
+            <h4>TCS</h4>
+            <h3>Associate Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">PHP</a>
+          <a class="lable-b" href="#">Angular</a>
+          <a class="lable-c" href="#">React</a>
+        </div>
+        <div class="job-posted">posted 1 days ago</div>
+      </div>
+
+      <div class="job-card">
+        <div class="job-name">
+          <img
+            class="job-profile"
+            src="https://www.ibm.com/brand/experience-guides/developer/8f4e3cc2b5d52354a6d43c8edba1e3c9/02_8-bar-reverse.svg"
+            alt="IBM"
+          />
+          <div class="job-detail">
+            <h4>IBM</h4>
+            <h3>Associate Engineer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              accusantium odio, dicta quia pariatur doloremque praesentium fugit
+              repellat eligendi, consequuntur, tempore quibusdam possimus atque.
+              Fugit obcaecati ipsum magni similique consequatur?
+            </p>
+          </div>
+        </div>
+        <div class="job-lable">
+          <a class="lable-a" href="#">HTML</a>
+          <a class="lable-b" href="#">CSS</a>
+          <a class="lable-c" href="#">JS</a>
+        </div>
+        <div class="job-posted">posted 1 days ago</div>
+      </div>
+      <button class="job-more">More List</button>
+    </section>
+
+    <!-- join -->
+    <section class="join">
+      <div class="join-detail">
+        <h1 class="section-title">Start your Application</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+          itaque facere laborum obcaecati laboriosam, consectetur maxime
+          voluptatibus, ipsum autem quis rem hic aliquam eos nulla. Quam eaque
+          temporibus esse atque.
+        </p>
+      </div>
+      <button class="join-button">Join now!!</button>
+    </section>
+
+    <!-- featured company -->
+    <section class="featured" id="companies">
+      <h1 class="section-title">Featured Company</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+        exercitationem eos dolor, aspernatur asperiores officiis quidem alias
+        fugiat soluta odit ipsa voluptatum architecto voluptate? Officia
+        repellendus fugiat distinctio earum blanditiis.
+      </p>
+      <div class="featured-card">
+        <div class="featured-wrapper">
+          <img
+            class="feature-img"
+            src="https://media.designrush.com/inspiration_images/271616/conversions/1_Salesforce_fc08f6ce4677-mobile.jpg"
+            alt="salseforce"
+          />
+          <p>Salseforce</p>
+          <button class="featured-button">View more</button>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-wrapper">
+          <img
+            class="feature-img"
+            src="https://i.pinimg.com/736x/e2/c5/fa/e2c5fa0628a132301ca082c10b91d4c6.jpg"
+            alt="genpact"
+          />
+          <p>Genpact</p>
+          <button class="featured-button">View more</button>
+        </div>
+      </div>
+      <div class="featured-card">
+        <div class="featured-wrapper">
+          <img
+            class="feature-img"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARsAAACyCAMAAABFl5uBAAAArlBMVEX///8AcK0Sq9sAptkAbqwAqNoAZKcAaqoAZ6kAbKsSrNwAaKkAY6cTrt3p8/j5/f4Ac68KgbnH3etNkL681ebw+PuRudXY5/EIfLbX7ve13/BFtt6uy+CIs9JCirvh7vVposh5qcwMh74Pmcyzz+Kq2u7N6PSRz+k2st1YlsGgw9uMtdPD2ulUl8LQ4e2mxdwOkcY6hrkAhb1jv+JuxeWDyued1Otpw+TB5PKy3O7YNVAxAAAH60lEQVR4nO2da3eiMBCGURIgIoq1uN4vtfXSdu3Farv//49tQGvVghIgmYh5zp6z5+yHlrw7M5kbqmkKhUKhUCgUCoVCoVAorptaowL9CLJSN21rfgP9FFIytAuFAjGa3Sr0k0jH3JeGgmyzp1zrgL5Z+AbZ9mgA/TzyUGmSwh6IlOd/oJ9JEhYIFY4gxl+lDqVbPlZmo05dqTM0wqQJ1Jlfd1T+07QjpKGY5ZEH/YBwPFokWhqKbTagHxGISj3Kn3Ygy72FfkwIuui00WzVMepXl+5489D7KQRi9aAfVixdM47RbLHdKypCB33jV7530rHKw2upQRs2g9FsMNFVxORFzWYymi1G/k2nOiwnUYZiN3MedbrIPK9CBKj8BP34HKExOLEyPlY/t0VEj+12CoGQZ+hDcOHWTe5OP5RzWGFV5qmNZoM1hz5K1jQM5pQmCrOZq77OTTNRShMBMhfQB8oML3FKE4VxD32mjOiSLGLwAaj8CH2qLEib0kRgjaAPlp6elbE7fWNcujiLTGPwIfZf6NOlYpR1DM6NODeZ5MG5FGeUUR58AmsIfchELJqcjWYjziUG5Cf+RhNgXFzlOahZQpShlLvQh2Wjy+/iDhHnohqlmVdPp7EvZ+w5EBKE9yDNS5k/dM9sRnDAvJBml4Ck5jcXcVlV68LupwPK8ve6Bq5wf9qAXNlDzjP7lDsrzCH04U/T5dLDioncTdJG3FUjPiCJvaoHaTUFqb1qBCwN9SpZh8Hw0hRQE1qEcCSQplCwpBzLSCFNAREJ908aUkhDC3L5Vm3D32OBwJBth2ABUV2GY0rWPa4I7tacAllyGU5NGquhmFJFnKFEZuMbjkSVA2h9GYItT45TETlQiINEyXEfrGEThSXLROYF0KPQhuN/lqUc94AyG4SIW7t7pdy911xE9p9Clmg8BPEoVLgbY8cpBTiOU9Rfa3v2Y0vRAFwA1ArUYsYlp1TchwpUHO8+tYFIMazqi/co5I6pECE4zrc6yJSgGr8RbjaI3JVCldlYz3jzf2VJ8H6eeLNB40hlAnWw6z8SgS84F6Lvb9QsnpTGN52guHOhpdHmgi8pVCuVTkvjh50mFceA3jmpCI42qHbGaLam49KAA32LP4qtv2NKQ2MOgg84Yts2caWh4rwS9AYrzR+hkRg140oThBwbtmxonPhEn+xxi+fD8M5wxsSA/TCqN5EuhfT40viGY4Bmf55IlzLHLNJQw4FdcbsVuLqG7uIHm43hwF5UTwJv8CaT1fjavPchtamLCzcEs2pTGoNWDa44aV5ZpaEgQGk8YTc4S2azw4FcVF+IC8UMmc2O0jvg6PdWlN0Qtuv7W5tXwEr8UZQ2STyKogMmxqIqBvY7aqvNBE6bnpj0Br0mM5ui/gWnzUhMz89NZjWwdiNmsSRZIA60aeVcm/j9rN/aAI6oxMSbpMoUixhOGiGlZnKPKhZngNqIuMMTpjaB2SwBtbnnXzMQpl7fkTZTQG1uuGvD3NDaB/IK1yr87SaFNKDXlFYlnHtb5PRWwBk6gNLw36FIEYip2TyAasM5wWEbuvzSBnZxn+9FlbjGDAC9wTXeWxSJa8yN2QAW4QE855ppUhuKAywNz8wYvafxKOhIrPHco0BuGmUkMBtNa/JyqnSpDXy00fi101N6FPQlFeDxualQiq5NYDZSvJTIp/eXpmvjS/MPWpYALtE4VflNPeoDWpUtdQ7DBjedNJD9vgM4GM5+HZVkR0CCtzy2ZL6ZTvbqKPzZ0lm1kSIObxhk/Gnfh0OXmdZmEgc70Kv6BzSyrcYPgw2uag8M4mBHIqvxyTI5Ruhw1cafTbZxXGn0pRyvaf6QZTgm+mH01df0F0xwPHV0yMlCBNl51e8yKuj6ep0Y4uAZ4Pw7mqySHPt3q287LZjqZ9TBeA0sQgRVN5OQY7x0fvvJthEz6JxSB+OVPFnNEYMsvMp60kKOv+vETKLUwXpxKq0ymv+6b2rLMXraJOS6xu3dLxmsHP0oLGMqzIcEzZqT3KftVvhf0jYNM4zS/q9prZclrFOFKPSv0nIKOdmNy30qy0HlF/ozZqEuc3wze61Ju/3Qbk8GMnvSAbcp0hwUvOoeUTuBDv0zYmEmtRziBlXQR9RNdDH2EU0l4WfrW/Ug1feipMEz2UqBBFSTfEEk+X5BbhWZwOBZDixHe2H9jkhk1bar9YNTuZ1crYeEVOpMIZnYu7cqT9dMGHxQmQX3buyPbSPGfNdvWZ8pmPSOlKUkI9VGvG+LNMvznzdVzvc+sb7MwWWueU/o3BcRINsa7r3D48VpmmN9Ns2B8VS7b4YZKQ+xjdrjQfdyFrO3h3W8nD58TVqXHZsHj33bMo/3JRExbeutcfTaV1xpAnloIaVf/qXuPY/6qGxZpkmCP5ZVNt9Gt8f97iqLND76J8hxsqfyfN/ojYbDUa9x/1wJyXAHDqs0krb4sif+GGEDdnIQj2NR/WAcXOqybAJwp83oT7qcwwQOTGZsRqM77fM/NBd8dViVyUVNdZ7Jqsi2BKDP5NjG4ku19fDhnJvFHSmDP/NQS52lRdNaJmF0vfOQg8ZfLLxlfG/CvjCS7Y3w5evkAPfHkfTZ6uviCydmWjQUR2+O+IM53Fl9XZXB7DNZL53thPJbkKDE1kudz/XXZfcgssCbtNerz2UnYLmarv9NWtfnRAqFQqFQKBQKhUKhUCgUEfwHLKmkdUZ+OcgAAAAASUVORK5CYII="
+            alt="capgemini"
+          />
+          <p>capgemini</p>
+          <button class="featured-button">View more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimoi -->
+    <section class="testimoni" id="testimoni">
+      <h1 class="section-title">Testimoni</h1>
+      <p>Review by our clinet</p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <i class="fas fa-quote-left"></i>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              odit porro totam repellat assumenda aperiam neque exercitationem
+              excepturi praesentium obcaecati tempore nihil libero quibusdam,
+              unde dolore fugit eligendi nobis veniam!
+              <div class="testimoni-pic">
+                <img src="" alt="" />
+                <p>John</p>
+                <span>Bussiness Director</span>
+              </div>
+            </h3>
+          </div>
+
+          <div class="swiper-slide">
+            <i class="fas fa-quote-left"></i>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              odit porro totam repellat assumenda aperiam neque exercitationem
+              excepturi praesentium obcaecati tempore nihil libero quibusdam,
+              unde dolore fugit eligendi nobis veniam!
+              <div class="testimoni-pic">
+                <img src="" alt="" />
+                <p>Ajith</p>
+                <span>Bussiness Director</span>
+              </div>
+            </h3>
+          </div>
+
+          <div class="swiper-slide">
+            <i class="fas fa-quote-left"></i>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              odit porro totam repellat assumenda aperiam neque exercitationem
+              excepturi praesentium obcaecati tempore nihil libero quibusdam,
+              unde dolore fugit eligendi nobis veniam!
+              <div class="testimoni-pic">
+                <img src="" alt="" />
+                <p>Krish</p>
+                <span>Bussiness Director</span>
+              </div>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <h1 class="section-title">Carrers</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique
+        repellendus ad dolores ut voluptatem quibusdam? Voluptas vitae, eaque
+        inventore dignissimos cumque, neque unde voluptates illo consequuntur
+        pariatur quam maxime. Harum?
+      </p>
+      <div class="blog-wrapper">
+        <div class="blog-card">
+          <img
+            class="blog-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRif-1sKzL68Gc65oOkvmDCOUx7ffhEbGGy0RqLk57iBg&s"
+            alt="Img error"
+          />
+          <div class="blog-detail">
+            <span>11 Apr 2024</span>
+            <h4>Enjoying the work</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              incidunt sunt, aliquam nemo pariatur laudantium maxime, enim sequi
+              a dignissimos unde voluptatibus omnis ipsum harum provident fugiat
+              vitae facere optio.
+            </p>
+            <hr class="divider" />
+            <a href="#" class="blog-more">Read</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img
+            class="blog-img"
+            src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?cs=srgb&dl=pexels-divinetechygirl-1181396.jpg&fm=jpg"
+            alt=""
+          />
+          <div class="blog-detail">
+            <span>30 march 2022</span>
+            <h4>Enjoying the work</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              incidunt sunt, aliquam nemo pariatur laudantium maxime, enim sequi
+              a dignissimos unde voluptatibus omnis ipsum harum provident fugiat
+              vitae facere optio.
+            </p>
+            <hr class="divider" />
+            <a href="#" class="blog-more">Read</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <img
+            class="blog-img"
+            src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_640.jpg"
+            alt=""
+          />
+          <div class="blog-detail">
+            <span>15 jul 2022</span>
+            <h4>Enjoying the work</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+              incidunt sunt, aliquam nemo pariatur laudantium maxime, enim sequi
+              a dignissimos unde voluptatibus omnis ipsum harum provident fugiat
+              vitae facere optio.
+            </p>
+            <hr class="divider" />
+            <a href="#" class="blog-more">Read</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <h3>Job Here</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+          ipsam quidem fugit eligendi reprehenderit aliquid distinctio
+          recusandae. Sit nam natus labore molestiae voluptatibus, minus
+          voluptas illo obcaecati non sequi quas.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-wrap">
+        <h4>Explore</h4>
+        <a href="#">Top MNC's</a>
+        <a href="#">Podcast</a>
+        <a href="#">Carrers</a>
+      </div>
+      <div class="footer-wrapper">
+        <h4>About Us</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="footer-wrapper">
+        <h4>Support</h4>
+        <a href="#">Customerservice</a>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
